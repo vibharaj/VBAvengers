@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Display Quiz</title>
+   <link rel="stylesheet" href="display.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+   <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Alegreya' rel="stylesheet">
+   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <form id="form1" action="index.html" method="GET">
+        <div class="container">
+            <div class ="title">
+                <h1 style="font-family: 'Aladin';" >Which Character Are You Quiz</h1>
+            </div>
+            <div class="box">
+                <div class="question" id="question1"></div>
+                <div class="choices">
+                    <input type="radio" id = "character1" name="answer1" value="honor">
+                    <label for="character1" id="option1"></label><br>
+        
+                    <input type="radio" id = "character2" name="answer1" value="justice">
+                    <label for="character2" id="option2"></label><br>
+        
+                    <input type="radio" id = "character3" name="answer1" value="family">
+                    <label for="character3" id="option3"></label><br>
+        
+                    <input type="radio" id = "character4" name="answer1" value="purpose">
+                    <label for="character4" id="option4"></label><br>
+                </div>
+            </div>
+            <div class="box">
+                    <div class="question" id="question2"></div>
+                    <div class="choices">
+                        <input type="radio" id = "character5" name="answer2" value="honor">
+                        <label for="option1" id="option5"></label><br>
+
+                        <input type="radio" id = "character6" name="answer2" value="justice">
+                        <label for="option2" id="option6"></label><br>
+
+                        <input type="radio" id = "character7" name="answer2" value="family">
+                        <label for="option3" id="option7"></label><br>
+
+                        <input type="radio" id = "character8" name="answer2" value="purpose">
+                        <label for="option4" id="option8"></label><br>
+                    </div>
+            </div>
+            <div class="box">
+                    <div class="question" id="question3"></div>
+                    <div class="choices">
+                    <input type="radio" id = "character9" name="answer3" value="honor">
+                    <label for="option1" id="option9"></label><br>
+
+                    <input type="radio" id = "character10" name="answer3" value="justice">
+                    <label for="option2" id="option10"></label><br>
+
+                    <input type="radio" id = "character11" name="answer3" value="family">
+                    <label for="option3" id="option11"></label><br>
+
+                    <input type="radio" id = "character12" name="answer3" value="purpose">
+                    <label for="option4" id="option12"></label><br>
+                    </div>
+                </div>
+            <div class="box">
+                <div class="question" id="question4"></div>
+                    <div class="choices">
+                    <input type="radio" id = "character13" name="answer4" value="honor">
+                    <label for="option1" id="option13"></label><br>
+
+                    <input type="radio" id = "character14" name="answer4" value="justice">
+                    <label for="option2" id="option14"></label><br>
+
+                    <input type="radio" id = "character15" name="answer4" value="family">
+                    <label for="option3" id="option15"></label><br>
+
+                    <input type="radio" id = "character16" name="answer4" value="purpose">
+                    <label for="option4" id="option16"></label><br>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="question" id="question5"></div>
+                    <div class="choices">
+                    <input type="radio" id = "character17" name="answer5" value="honor">
+                    <label for="option1" id="option17"></label><br>
+
+                    <input type="radio" id = "character18" name="answer5" value="justice">
+                    <label for="option2" id="option18"></label><br>
+
+                    <input type="radio" id = "character19" name="answer5" value="family">
+                    <label for="option3" id="option19"></label><br>
+
+                    <input type="radio" id = "character20" name="answer5" value="purpose">
+                    <label for="option4" id="option20"></label><br>
+                    </div>
+            </div> <br>
+            <button type="submit" class="btn-default"><span>Done!</span></button>
+            <br><br>
+            <a href="index.html"> Go back to home page </a>
+            <br><br>
+        </div>
+    </form>
+    <div id="dialog" style="display: none">
+        This is a jQuery Dialog.
+    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+   <script src="scripts/firebaseconfig.js" charset="utf-8"></script>
+   <script src="scripts/GetThemeAndCharacters.js" charset="utf-8"></script>
+   <script src="scripts/formhandler.js" charset="utf-8"></script>
+   <script src="scripts/firebasedatastore.js" charset="utf-8"></script>
+   <script src="scripts/display.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+}
+   
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: black; 
+}
+   
+.banner {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+   
+.steps{
+    text-align: center;
+}
+   
+.description{
+    padding-bottom: 60px;
+}
+   
+.btn-second{
+    background: linear-gradient(60deg, #f7556a, #e68863, #f3e17a, #96e982, #8ea5f1);
+    border-radius: 180px;
+    border: 2px solid black;;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Sofia', Impact;
+    cursor: pointer;
+}
+   
+.btn-second span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-second span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-second:hover span {
+    padding-right: 25px;
+}
+
+.btn-second:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.middlebanner {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.btn-default{
+    display: grid;
+    background: linear-gradient(60deg, #f7556a, #e68863, #f3e17a, #96e982, #8ea5f1);
+    border-radius: 180px;
+    border: 2px solid black;;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Sofia', Impact;
+    cursor: pointer;
+    margin-left: 43%;
+}
+
+.btn-default span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-default span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-default:hover span {
+    padding-right: 25px;
+}
+
+.btn-default:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.title{
+    font-family: 'Aladin';
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #757171;
+}
+
+ul{
+    display: inline-block;
+    text-align: left;
+    font-family: 'Alegreya';
+    font-size: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#step{
+    height: 640px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Aladin';
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.zoom {
+transition: transform .2s;
+}
+
+.zoom:hover {
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5); 
+}
+
+.chardiv {
+    width: 5000px;
+}

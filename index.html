@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Which Character Are You</title>
+   <link rel="stylesheet" href="homePage.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+   <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Alegreya' rel="stylesheet">
+   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+</head>
+<body>
+   <div class="banner">
+       <h1 class="title">Which Character Are You?</h1>
+       <h4 style="font-size: 20px;">Follow the steps below to create your own quiz!</h4>
+       <p class="steps">
+           <ul style="font-size: 25px;">
+               Step 1: Choose a theme <br>
+               Step 2: Choose 4 characters <br>
+               Step 3: Fill out template <br>
+           </ul>
+       </p>
+       <button type="second" class="btn-second" href="#step1"><span><a href="#step1">Get Started!</a></span></button>
+   </div>
+
+   <form action="quizPage.html" method="GET">
+        <div class="description">
+            <div id="step">
+                <div id="step1">
+                    <h1>Step 1: Choose a theme</h1>
+                    <img src="image/disney.jpg" class="zoom" alt="Disney" style="width:200px; padding-left: 30px; padding-right: 30px;" >
+                    <img src="image/marvel.jpg" class="zoom" alt="Marvel" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/starwars.jpg" class="zoom" alt="Starwars" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/startrek.jpg" class="zoom" alt="Startrek" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/pixar.jpg" class="zoom" alt="Pixar" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <br><br>
+                    <ul>
+                        <li>Choose a theme for characters you would like to create your quiz on. This can be any theme you would like!</li>
+                        <li>Some examples are: Marvel characters, Disney characters, your favorite superheroes, etc</li>
+                    </ul> <br><br>
+                    <label for="theme" style="font-size: 20px; font-family: 'Aladin'; padding-left: 20px;">Theme</label>
+                    <input type="text" name="Theme" id="theme" name="theme" required><br><br>
+                    <img src="image/harrypotter.jpg" class="zoom" alt="Harrypotter" style="width:200px; padding-left: 30px; padding-right: 30px;" >
+                    <img src="image/friends.jpg" class="zoom" alt="Friends" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/bridgerton.jpg" class="zoom" alt="Bridgerton" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/office.jpeg" class="zoom" alt="Office" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/newgirl.jpeg" class="zoom" alt="Transformers" style="width:200px; padding-left: 30px; padding-right: 30px;"><br>
+                </div>
+            </div>
+            <div style="height: 640px;" id="step">
+                <div class="middlebanner" style="font-family: 'Aladin'; font-size: 60px;">Continue to Step 2</div>
+                <h1>Step 2: Choose 4 Characters</h1>
+                    <img src="image/groot.jpg" class="zoom" alt="Groot" style="width:200px; padding-left: 30px; padding-right: 30px;" >
+                    <img src="image/mickey.jpg" class="zoom" alt="Mickey" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/yoda.png" class="zoom" alt="Yoda" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/bridgertonchar.jpg" class="zoom" alt="BridgertonChar" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <img src="image/harrychar.jpg" class="zoom" alt="HarryChar" style="width:200px; padding-left: 30px; padding-right: 30px;">
+                    <br><br>
+                <ul>
+                    <li>After you have decided on a theme and picked your list of 4 different characters based on your theme. </li>
+                    <li>Click on the “Create your own character quiz now!” button when done</li>
+                </ul><br><br>
+                <div>
+                    <label for="q1" style="font-size: 20px; font-family: 'Aladin'; padding-left: 20px;">Character 1</label>
+                    <input type="text" id="q1" name="q1" placeholder="Iron man" required><br><br>
+
+                    <label for="q2" style="font-size: 20px; font-family: 'Aladin'; padding-left: 20px;">Character 2</label>
+                    <input type="text" id="q2" name="q2" placeholder="Captain America" required><br><br>
+ 
+                    <label for="q3" style="font-size: 20px; font-family: 'Aladin'; padding-left: 20px;">Character 3</label>
+                    <input type="text" id="q3" name="q3" placeholder="Doctor Strange" required><br><br>
+ 
+                    <label for="q4" style="font-size: 20px; font-family: 'Aladin'; padding-left: 20px;">Character 4</label>
+                    <input type="text" id="q4" name="q4" placeholder="Spiderman" required><br><br>
+                </div>
+            </div><br><br>
+        </div><br>
+        <div class="middlebanner" style="font-family: 'Aladin'; font-size: 60px;">
+            Create your quiz
+        </div><br><br>
+        <button type="submit" class="btn-default"><span>Begin Creating Quiz!</span></button>
+        <br><br>
+
+        <div style="text-align: center; font-family: 'Alegreya';">
+            <p>Created by: Vibha Rajagoaplan, Brenda Gomez, Anjali Patel <br>
+            (Disclaimer: none of the following images belong to us)</p>
+        </div>
+
+    </form>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="scripts/GetThemeAndCharacters.js" charset="utf-8"></script>
+
+ 
+</body>
+</html>

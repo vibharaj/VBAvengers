@@ -1,0 +1,105 @@
+.container {
+   align-items: center;
+}
+  
+.title {
+   background: url(background.jpg);
+   text-align: center;
+   padding-top: 20px;
+   width: 100%;
+   height: 100px;
+ }
+  
+.box {
+   margin: 0 auto;
+   width: 450px;
+   height: 500px;
+   border: 1px solid black;
+   margin-top: 20px;
+   font-family: 'Alegreya';
+   font-size: 20px;
+}
+
+.question {
+   padding-top: 10px;
+   font-size: 40px;
+}
+  
+#question1 {
+   text-align: center;
+   width: 100%;
+   height: 30%;
+   background-color: rgb(241, 142, 183);
+}
+#question2 {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(243, 163, 126);
+}
+#question3 {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(253, 220, 130);
+}
+#question4 {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(171, 245, 217);
+}
+#question5 {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(207, 161, 198);
+}
+
+.choices {
+   align-items: center;
+   padding-top: 20px;
+   font-size: 25px;
+}
+
+input[type="radio"]{
+     margin-bottom: 20px;
+}
+
+.btn-default{
+   display: grid;
+   background: linear-gradient(60deg, #f7556a, #e68863, #f3e17a, #96e982, #8ea5f1);
+   border-radius: 180px;
+   border: 2px solid black;;
+   padding: 15px 32px;
+   text-align: center;
+   font-size: 16px;
+   font-family: 'Sofia', Impact;
+   cursor: pointer;
+   margin-left: 43%;
+}
+
+.btn-default span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+
+.btn-default span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+
+.btn-default:hover span {
+   padding-right: 25px;
+}
+
+.btn-default:hover span:after {
+   opacity: 1;
+   right: 0;
+}

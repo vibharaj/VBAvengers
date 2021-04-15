@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create quiz</title>
+    <link rel="stylesheet" href="quizPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Alegreya' rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Creating your Quiz</h1>
+        <div id="step">
+            <h1>Step 3: Fill out the Template</h1>
+            <ul>
+                <li>Enter your question 1 in the textbox labeled Question 1 and add your answer choices to the blanks under the question textbox</li>
+                <li>Repeat until you have completed the template</li>
+                <li>Enter 4 answer choices for each question</li>
+                <li>For each answer choice, select which character it would correspond to.</li>
+                <li>Click “Create!” when done</li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div action="display.html" class="content">
+            <form data-questions="form">
+                <input class="form" name="question" id="question" placeholder="QUESTION" autofocus: required>
+                    <input class="form" name="option1" id="option" placeholder="OPTION 1" autofocus: required>
+                    <select id="Characters1" class="form-control" name="character1">
+                    </select>
+                    <input class="form" name="option2" id="option" placeholder="OPTION 2" autofocus: required>
+                    <select id="Characters2" class="form-control" name="character2">
+                    </select>
+                    <input class="form" name="option3" id="option" placeholder="OPTION 3" autofocus: required>
+                    <select id="Characters3" class="form-control" name="character3">
+                    </select>
+                    <input class="form" name="option4" id="option" placeholder="OPTION 4" autofocus: required>
+                    <select id="Characters4" class="form-control" name="character4">
+                    </select>
+                <br><br><br>   
+                <button type="submit" class="btn-default"> <span> Submit & add another question! </span> </button> <br>
+                <br><br><br>
+            </form>
+            <button class="btn-default" onclick="location.href = './display.html';"> <span>I'm done with my quiz</span></button> <br> <br>
+            <a href="index.html"> Go back to home page </a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="scripts/firebaseconfig.js" charset="utf-8"></script>
+    <script src="scripts/GetThemeAndCharacters.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/firebasedatastore.js" charset="utf-8"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
